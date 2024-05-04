@@ -5,7 +5,7 @@ from django.http import HttpResponse
 def index(request):
     if request.method == "GET":
        return HttpResponse(request.method)
-   elif request.method == "POST":
+    elif request.method == "POST":
        return HttpResponse("You must have POSTed something")
 
 def about_me(request):
